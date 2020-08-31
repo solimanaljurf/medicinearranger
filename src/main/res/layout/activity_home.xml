@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meddd"
+    tools:context=".home">
+
+
+ <TextView
+     android:id="@+id/textView4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="45dp"
+     android:layout_marginTop="43dp"
+     android:layout_marginBottom="567dp"
+     android:fontFamily="@font/lato"
+     android:text="Home"
+     android:textColor="#ffff"
+     android:textSize="35sp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.0" />
+
+ <androidx.coordinatorlayout.widget.CoordinatorLayout
+     android:id="@+id/coordinatorLayout"
+     android:layout_width="match_parent"
+     android:layout_height="565dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.5"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textView4"
+     tools:ignore="MissingConstraints">
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/ryclermed"
+      android:layout_width="match_parent"
+      android:layout_height="482dp" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/addmed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_margin="16dp"
+      android:backgroundTint="@color/colorPrimary"
+      android:src="@drawable/ic_add_black_24dp" />
+
+ </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

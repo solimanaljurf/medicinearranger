@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meddd"
+    tools:context=".time"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="81dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="567dp"
+        android:text="Time"
+        android:textColor="#ffff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="345dp"
+        android:layout_height="470dp"
+        android:src="@drawable/recr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <EditText
+        android:id="@+id/dauerationmed"
+        android:layout_width="313dp"
+        android:layout_height="50dp"
+        android:hint="week , month ....."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.097" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="313dp"
+        android:layout_height="93dp"
+        android:background="@drawable/boxxx"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <TextView
+        android:id="@+id/timetext"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="139dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addtimebtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_add_alert_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <CheckBox
+        android:id="@+id/fri"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/f"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/sat"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/sat"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/s"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/sun"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/s"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="@+id/sat"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/mun"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/m"
+        app:layout_constraintBottom_toBottomOf="@+id/sun"
+
+        app:layout_constraintEnd_toStartOf="@+id/tus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sun"
+        app:layout_constraintTop_toTopOf="@+id/sun"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/tus"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/t"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/wen"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/w"
+        app:layout_constraintBottom_toBottomOf="@+id/tus"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="@+id/tus"
+        app:layout_constraintTop_toTopOf="@+id/tus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/thrs"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/t"
+        app:layout_constraintBottom_toBottomOf="@+id/wen"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="@+id/wen"
+        app:layout_constraintTop_toTopOf="@+id/wen"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/all"
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:button="@android:drawable/divider_horizontal_bright"
+        android:gravity="center"
+        android:text="@string/all"
+        app:layout_constraintBottom_toBottomOf="@+id/thrs"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/thrs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="205dp"
+        android:layout_height="42dp"
+        android:onClick="setalarm"
+        android:background="@drawable/buttonsa"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/backtomed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="bac_med"
+        android:background="@drawable/arrrrrrrrrrrrrrrrrs"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="Duration"
+        app:layout_constraintBottom_toTopOf="@+id/daueration"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
